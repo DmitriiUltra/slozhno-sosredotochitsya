@@ -4,22 +4,6 @@
   переключая тему
 */
 
-:root.page.theme_light {
-  --bg-color: #FFF1F7;
-  --bg-image: url(../images/cover-image-light.png);
-  --accent-color: #FF8DCB;
-  --content-text-color: #353430;
-  --title-text-color: #353430;
-  --big-text-color: #FFC2E6;
-  --main-font: 'IBM Plex mono';
-  --padding: 10px;
-  --batton-hover-color: rgba(50, 49, 45, 0.40);
-  --border-color: #353430;
-  --button-color: #353430;
-  --section-title-color: #353430;
-  --link-decor-color: #353430;
-}
-
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -31,9 +15,8 @@
   --content-text-color: #353430;
   --title-text-color: #353430;
   --big-text-color: #FFC2E6;
-  --main-font: 'IBM Plex mono';
   --batton-hover-color: rgba(50, 49, 45, 0.40);
-  --border-color: #353430;
+  --border-color: var(--section-title-color);
   --button-color: #353430;
   --section-title-color: #353430;
   --link-decor-color: #353430;
@@ -52,7 +35,6 @@
     --title-text-color: #353430;
     --big-text-color: #FFC2E6;
     --batton-hover-color: rgba(50, 49, 45, 0.40);
-    --border-color: #353430;
     --button-color: #353430;
     --section-title-color: #353430;
     --link-decor-color: #353430;

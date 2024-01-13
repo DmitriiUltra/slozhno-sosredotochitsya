@@ -4,22 +4,6 @@
   переключая тему
 */
 
-:root.theme_dark {
-  --bg-color: #000028;
-  --bg-image: url(../images/cover-image-dark.png);
-  --accent-color: #FF0070;
-  --content-text-color: #F1B2CE;
-  --title-text-color: #000028;
-  --big-text-color: #DB00FF;
-  --main-font: 'IBM Plex mono';
-  --padding: 10px;
-  --batton-hover-color: rgba(255, 0, 112, 0.40);
-  --border-color: #FF0070;
-  --button-color: #FF0070;
-  --section-title-color: #FF0070;
-  --link-decor-color: #F1B2CE;
-}
-
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -31,9 +15,8 @@
   --content-text-color: #F1B2CE;
   --title-text-color: #000028;
   --big-text-color: #DB00FF;
-  --main-font: 'IBM Plex mono';
   --batton-hover-color: rgba(255, 0, 112, 0.40);
-  --border-color: #FF0070;
+  --border-color: var(--section-title-color);
   --button-color: #FF0070;
   --section-title-color: #FF0070;
   --link-decor-color: #F1B2CE;
@@ -42,20 +25,3 @@
 .page.theme_dark .decorated-item {
   display: block;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #000028;
-  --bg-image: url(../images/cover-image-dark.png);
-  --accent-color: #FF0070;
-  --content-text-color: #F1B2CE;
-  --title-text-color: #000028;
-  --big-text-color: #DB00FF;
-  --main-font: 'IBM Plex mono';
-  --batton-hover-color: rgba(255, 0, 112, 0.40);
-  --border-color: #FF0070;
-  --button-color: #FF0070;
-  --section-title-color: #FF0070;
-  --link-decor-color: #F1B2CE;
-   }
-  }
